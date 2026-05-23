@@ -15,9 +15,19 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://resume-site-khaki-six.vercel.app"),
   title: "Lum Soon Keong, Full-Stack Engineer",
   description:
     "Full-stack engineer with 6+ years shipping production systems for Singapore government agencies (IRAS, MOM, DOS). .NET Core, Java, Angular, TypeScript, Kafka.",
+  openGraph: {
+    title: "Lum Soon Keong, Full-Stack Engineer",
+    description:
+      "Six years shipping Singapore's public stack. IRAS, MOM, DOS. .NET Core, Java, Angular, Kafka.",
+    url: "https://resume-site-khaki-six.vercel.app",
+    siteName: "Lum Soon Keong",
+    locale: "en_SG",
+    type: "website",
+  },
 };
 
 export default function RootLayout({
